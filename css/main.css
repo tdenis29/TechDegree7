@@ -372,8 +372,8 @@ h1 {
 }
 
 .bell-icon {
-  height: 1.5rem;
-  width: 1.5rem;
+  height: 2rem;
+  width: 2rem;
 }
 
 .profile-pic img {
@@ -400,7 +400,9 @@ h1 {
 .main-nav img {
   display: inline-block;
   width: 2rem;
+  height: 2rem;
   margin-top: 1.5rem;
+  padding: 0.5rem;
 }
 
 /*# sourceMappingURL=main.css.map */
