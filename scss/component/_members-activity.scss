@@ -1,0 +1,51 @@
+.members {
+    display: block;
+    width: 100%;
+
+h3 {
+   padding: 1em; 
+}
+.members-container{
+    background: whitesmoke;
+    padding: 1em;
+    margin: .5em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+img {
+    border-radius: 50%;
+}}}
+
+.recent-activity{
+    display: block;
+    width: 100%;
+.activity-container{
+    background: whitesmoke;
+    padding: 1em;
+    margin: .5em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+img {
+    border-radius: 50%;
+}}}
+
+
+.messenger-container {
+    background: whitesmoke;
+    padding: 1em;
+    margin: .5em;
+    align-items: left;
+ 
+input {
+    display: block;
+    margin: 1em 0 1em 0;
+textarea {
+    display: block;
+    margin: 1em;
+}}}
+
+.widget-container{
+    display: flex;
+    flex-direction: column;
+}
