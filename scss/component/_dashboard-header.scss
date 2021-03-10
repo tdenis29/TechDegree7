@@ -1,0 +1,33 @@
+.dashboard-header {
+display: flex;
+align-items: center;
+text-align: center;
+
+h2 {
+ background-color: whitesmoke;
+ border-bottom: none;
+ padding: 1.1rem;
+}}
+
+.main-header-search {
+margin-left: auto;
+width: 75%;
+background-color: white;
+display: flex;
+border-bottom: 1px solid black;
+border-left: solid 1px black;
+border-bottom-left-radius: .5rem;
+
+padding: 1.125rem;
+input {
+    width: 60%;
+    justify-self: right;
+    padding: .2rem;
+    margin-left: auto;
+    margin-right: .5rem;
+    border-radius: 5px;
+  
+}}
+.headline {
+    padding: 1rem;
+}

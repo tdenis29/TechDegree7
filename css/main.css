@@ -354,26 +354,33 @@ header {
 }
 
 h1 {
-  width: 80%;
+  flex-basis: 75%;
   padding-left: 0.5rem;
+  flex-shrink: 2;
 }
 
 .profile-pic {
   display: flex;
   margin-left: auto;
   border-left: 1px solid black;
-  width: 20%;
+  flex-basis: 30%;
   align-items: center;
+  position: absolute;
+  right: 0;
 }
 
 .notify {
   align-items: center;
-  width: 5%;
+  flex-basis: auto;
+  margin-right: 1rem;
 }
 
 .bell-icon {
   height: 2em;
   width: 2em;
+  position: absolute;
+  right: 175px;
+  top: 1.5rem;
 }
 
 .profile-pic img {
@@ -400,9 +407,43 @@ h1 {
   display: inline-block;
   height: 3em;
   width: 3em;
-  margin-top: 1.5rem;
-  margin-bottom: 1.5rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
   padding: 0.5rem;
+}
+
+.dashboard-header {
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+.dashboard-header h2 {
+  background-color: whitesmoke;
+  border-bottom: none;
+  padding: 1.1rem;
+}
+
+.main-header-search {
+  margin-left: auto;
+  width: 75%;
+  background-color: white;
+  display: flex;
+  border-bottom: 1px solid black;
+  border-left: solid 1px black;
+  border-bottom-left-radius: 0.5rem;
+  padding: 1.125rem;
+}
+.main-header-search input {
+  width: 60%;
+  justify-self: right;
+  padding: 0.2rem;
+  margin-left: auto;
+  margin-right: 0.5rem;
+  border-radius: 5px;
+}
+
+.headline {
+  padding: 1rem;
 }
 
 /*# sourceMappingURL=main.css.map */

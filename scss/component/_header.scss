@@ -8,27 +8,35 @@ header {
     } 
 
     h1 {
-        width: 80%;
+        flex-basis: 75%;
         padding-left: .5rem;
+        flex-shrink: 2;
     }
 
     .profile-pic {
         display: flex;
         margin-left: auto;
         border-left: 1px solid black;
-        width: 20%;
+        flex-basis: 30%;
         align-items: center;
-       
+      
+        position:absolute;
+        right:0;
     }
     .notify {
        align-items: center;
-       width: 5%;
+       flex-basis: auto;
+       margin-right: 1rem;
      
     }
     .bell-icon {
     height: 2em;
     width: 2em;
+    position: absolute;
+    right: 175px;
+    top: 1.5rem;
     
+  
     }
     .profile-pic img {
     display: inline-block;
@@ -41,4 +49,5 @@ header {
 
     .profile-pic h3 {
         padding-left: .5rem;
+   
     }
