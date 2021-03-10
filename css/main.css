@@ -515,30 +515,17 @@ h1 {
 
 .social-card {
   width: 25%;
-  background-color: transparent;
+  background-color: whitesmoke;
   display: flex;
   margin: 1rem;
   justify-content: center;
+  height: 80%;
 }
 
 .socialimage {
   background-color: blueviolet;
-}
-
-.facebook-icon {
-  height: 100%;
-  width: 100%;
-  fill: dodgerblue;
-}
-
-.bell-icon {
-  fill: red;
-}
-
-.twitter-icon {
-  height: 100%;
-  width: 100%;
-  fill: dodgerblue;
+  height: 2rem;
+  width: 2rem;
 }
 
 /*# sourceMappingURL=main.css.map */
