@@ -17,7 +17,6 @@ display: flex;
 border-bottom: 1px solid black;
 border-left: solid 1px black;
 border-bottom-left-radius: .5rem;
-
 padding: 1.125rem;
 input {
     width: 60%;
@@ -31,3 +30,11 @@ input {
 .headline {
     padding: 1rem;
 }
+
+.alert {
+    text-align: center;
+    background-color: purple;
+    padding: 1rem;
+p {
+    display: inline;
+}}

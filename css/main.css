@@ -446,4 +446,13 @@ h1 {
   padding: 1rem;
 }
 
+.alert {
+  text-align: center;
+  background-color: purple;
+  padding: 1rem;
+}
+.alert p {
+  display: inline;
+}
+
 /*# sourceMappingURL=main.css.map */
