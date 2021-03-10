@@ -1,0 +1,77 @@
+.traffic {
+background-color:dodgerblue;
+width:100%;
+margin: 0 auto;
+    
+.traffic-header{ 
+display: flex;
+justify-content: space-between;
+align-items: center;
+
+}h3{
+display: inline;
+padding: 1rem;
+}ul{
+display: flex;
+}
+li {
+display: inline;
+padding: .5rem;
+}
+}
+// half size widgets
+.daily {
+    background-color:darkmagenta;
+    width:100%;
+    margin: 0 auto;
+h3 {
+    padding: 1rem;
+}}
+
+.mobile-user{
+    background-color:darkgreen;
+    width:100%;
+    margin: 0 auto;  
+ h3 {
+     padding: 1rem;
+ }}
+
+//  Social Media 
+
+.social-container {
+display: flex;
+width: 100%;
+justify-content: space-between;
+justify-items: center;
+flex-wrap: wrap;
+h3 {
+    padding: 1rem;
+    width: 100%;
+}}
+
+.social-card {
+width: 25%;
+background-color: transparent;
+display: flex;
+margin: 1rem;
+justify-content: center;
+}
+
+.socialimage {
+    background-color: blueviolet;
+    
+}
+.facebook-icon{
+    height: 100%;
+    width: 100%;
+    fill: dodgerblue;
+}
+.bell-icon{
+fill: red;
+}
+
+.twitter-icon{
+    height: 100%;
+    width: 100%;
+    fill: dodgerblue;
+}

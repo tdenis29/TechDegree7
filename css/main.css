@@ -342,6 +342,7 @@ template {
   margin: 0;
   padding: 0;
   text-decoration: none;
+  list-style: none;
 }
 
 header {
@@ -450,9 +451,94 @@ h1 {
   text-align: center;
   background-color: purple;
   padding: 1rem;
+  width: 100%;
+  margin: 0 auto;
+  border: 1px solid transparent;
+  border-radius: 0.5rem;
 }
 .alert p {
   display: inline;
+  padding-right: 2rem;
+}
+
+.traffic {
+  background-color: dodgerblue;
+  width: 100%;
+  margin: 0 auto;
+}
+.traffic .traffic-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.traffic h3 {
+  display: inline;
+  padding: 1rem;
+}
+.traffic ul {
+  display: flex;
+}
+.traffic li {
+  display: inline;
+  padding: 0.5rem;
+}
+
+.daily {
+  background-color: darkmagenta;
+  width: 100%;
+  margin: 0 auto;
+}
+.daily h3 {
+  padding: 1rem;
+}
+
+.mobile-user {
+  background-color: darkgreen;
+  width: 100%;
+  margin: 0 auto;
+}
+.mobile-user h3 {
+  padding: 1rem;
+}
+
+.social-container {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  justify-items: center;
+  flex-wrap: wrap;
+}
+.social-container h3 {
+  padding: 1rem;
+  width: 100%;
+}
+
+.social-card {
+  width: 25%;
+  background-color: transparent;
+  display: flex;
+  margin: 1rem;
+  justify-content: center;
+}
+
+.socialimage {
+  background-color: blueviolet;
+}
+
+.facebook-icon {
+  height: 100%;
+  width: 100%;
+  fill: dodgerblue;
+}
+
+.bell-icon {
+  fill: red;
+}
+
+.twitter-icon {
+  height: 100%;
+  width: 100%;
+  fill: dodgerblue;
 }
 
 /*# sourceMappingURL=main.css.map */

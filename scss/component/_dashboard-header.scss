@@ -30,11 +30,16 @@ input {
 .headline {
     padding: 1rem;
 }
-
+// Alert bar
 .alert {
     text-align: center;
     background-color: purple;
     padding: 1rem;
+    width: 100%;
+    margin: 0 auto;
+    border: 1px solid transparent;
+    border-radius: .5rem;
 p {
     display: inline;
+    padding-right: 2rem;
 }}
