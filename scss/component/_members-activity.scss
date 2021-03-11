@@ -1,3 +1,4 @@
+// Members
 .members {
     display: block;
     width: 100%;
@@ -10,12 +11,20 @@ h3 {
     padding: 1em;
     margin: .5em;
     display: flex;
-    justify-content: space-between;
     align-items: center;
+    flex-grow: 1;
+    
 img {
     border-radius: 50%;
+    height: 6rem;
+    width: 6rem;
+    margin-right: 2em;
 }}}
+.members-text {
+    padding-right: 1em;
+}
 
+// Activity
 .recent-activity{
     display: block;
     width: 100%;
@@ -24,39 +33,18 @@ img {
     padding: 1em;
     margin: .5em;
     display: flex;
-    justify-content: space-between;
     align-items: center;
+    justify-content: left;
+    
 img {
     border-radius: 50%;
-}}}
-
-// Messager 
-.messenger-container {
-    background: whitesmoke;
-    padding: 1em;
-    margin: .5em;
-    align-items: left;
- 
-input {
-    display: block;
-    margin: 1em 0 1em 0;
-    height: 2em;
-    line-height: 2em;
-textarea {
-    display: block;
-    margin: 1em;
-    line-height: 2em;
-}}}
-
-.form-container{
+    height: 6rem;
+    width: 6rem;
+    margin-right: 2em;
+.activity-text{
     display: flex;
     flex-direction: column;
-}
-.button-primary {
-    background-color: darkgrey;
-    height: 2.75em;
-    width: 50%;
-    margin: 1rem auto;
-    border-radius: .5em;
-    box-shadow: inset;
-}
+    justify-self: center;
+  
+  
+}}}}

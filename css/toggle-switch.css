@@ -28,7 +28,7 @@
  */
   .switch-light {
     position: relative;
-    display: block;
+    display: inline-block;
     /* simulate default browser focus outlines on the switch,
    * when the inputs are focused.
    */ }

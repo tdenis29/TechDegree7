@@ -35,13 +35,17 @@ input {
 // Alert bar
 .alert {
     text-align: center;
-    background-color: whitesmoke;
+    background-color: black;
     padding: 1rem;
     width: 100%;
     margin: 0 auto;
     border: 1px solid transparent;
     border-radius: .5rem;
-p {
+    display: flex;
+ strong {
+     color: white;
+ }span {
     display: inline;
     padding-right: 2rem;
+    color: white;
 }}
