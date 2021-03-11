@@ -462,9 +462,11 @@ h1 {
   border: 1px solid transparent;
   border-radius: 0.5rem;
   display: flex;
+  justify-content: center;
 }
 .alert strong {
   color: white;
+  padding: 1em;
 }
 .alert span {
   display: inline;
@@ -531,8 +533,7 @@ h1 {
   justify-content: center;
   height: 80%;
   padding: 2em;
-  flex-grow: 1;
-  flex-shrink: 1;
+  flex: 1 1 auto;
   flex-wrap: nowrap;
 }
 
@@ -649,12 +650,43 @@ h1 {
 
 .switch-light {
   display: flex;
+  margin: 0 auto;
   flex-direction: row;
+  display: block;
   padding: 1em;
-  width: 100%;
+  width: 75%;
 }
 .switch-light strong {
   display: inline-block;
+}
+.switch-light strong span {
+  display: block;
+}
+
+.form-field {
+  height: 2.75em;
+}
+
+.settings-button {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  padding: 1em;
+}
+
+.save-button-primary {
+  width: 45%;
+  height: 2.75em;
+  background-color: black;
+  color: white;
+}
+
+.button-disabled {
+  width: 45%;
+  height: 2.75em;
+  background-color: black;
+  color: white;
 }
 
 /*# sourceMappingURL=main.css.map */

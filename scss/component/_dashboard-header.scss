@@ -42,8 +42,10 @@ input {
     border: 1px solid transparent;
     border-radius: .5rem;
     display: flex;
+    justify-content: center;
  strong {
      color: white;
+     padding: 1em;
  }span {
     display: inline;
     padding-right: 2rem;

@@ -38,15 +38,40 @@ textarea {
     display: flex;
     justify-content: space-between;
     align-items: left;
-    flex-direction: column;
-
-   
+    flex-direction: column; 
 }
 .switch-light{
  display: flex;
+ margin: 0 auto;
  flex-direction: row;
+ display: block;
  padding: 1em;
- width: 100%;
+ width: 75%;
 strong {
     display: inline-block;
-}}
+span {
+    display: block;
+}}}
+.form-field {
+    height: 2.75em;
+}
+.settings-button {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    padding: 1em;
+}
+.save-button-primary {
+    width: 45%;
+    height: 2.75em;
+    background-color: black;
+    color: white;
+
+}
+.button-disabled {
+    width: 45%;
+    height: 2.75em;
+    background-color: black;
+    color: white;
+}
