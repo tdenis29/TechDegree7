@@ -12,7 +12,7 @@ h2 {
 .main-header-search {
 margin-left: auto;
 width: 75%;
-background-color: white;
+background-color: whitesmoke;
 display: flex;
 border-bottom: 1px solid black;
 border-left: solid 1px black;
@@ -25,6 +25,8 @@ input {
     margin-left: auto;
     margin-right: .5rem;
     border-radius: 5px;
+    height: 2em;
+    line-height: 2em;
   
 }}
 .headline {
@@ -33,7 +35,7 @@ input {
 // Alert bar
 .alert {
     text-align: center;
-    background-color: purple;
+    background-color: whitesmoke;
     padding: 1rem;
     width: 100%;
     margin: 0 auto;

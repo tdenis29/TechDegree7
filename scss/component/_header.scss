@@ -1,7 +1,7 @@
 header {
     height: 5rem;
     border-bottom: 1px solid black;
-    background-color: orange;
+    background-color:black;
     margin: 0 auto;
     display: flex;
     align-items: center;
@@ -11,23 +11,26 @@ header {
         flex-basis: 75%;
         padding-left: .5rem;
         flex-shrink: 2;
+        color: white;
     }
 
     .profile-pic {
         display: flex;
         margin-left: auto;
-        border-left: 1px solid black;
+        border-left: 1px solid white;;
         flex-basis: 30%;
         align-items: center;
-      
         position:absolute;
         right:0;
+        color: white;
     }
     .notify {
        align-items: center;
        flex-basis: auto;
        margin-right: 1rem;
-     
+       fill: white;
+       
+       
     }
     .bell-icon {
     height: 2em;
@@ -35,7 +38,7 @@ header {
     position: absolute;
     right: 175px;
     top: 1.5rem;
-    
+    color: white;
   
     }
     .profile-pic img {

@@ -1,5 +1,5 @@
 .traffic {
-background-color:dodgerblue;
+background-color: whitesmoke;
 width:100%;
 margin: 0 auto;
     
@@ -21,7 +21,7 @@ padding: .5rem;
 }
 // half size widgets
 .daily {
-    background-color:darkmagenta;
+    
     width:100%;
     margin: 0 auto;
 h3 {
@@ -29,7 +29,7 @@ h3 {
 }}
 
 .mobile-user{
-    background-color:darkgreen;
+    background-color:whitesmoke;
     width:100%;
     margin: 0 auto;  
  h3 {
@@ -56,10 +56,16 @@ display: flex;
 margin: 1rem;
 justify-content: center;
 height: 80%;
+padding: 2em;
+flex-grow: 1;
+flex-shrink: 1;
+flex-wrap: nowrap;
+
+
 }
 
 .socialimage {
-    background-color: blueviolet;
+    background-color: whitesmoke;
     height: 2rem;
     width:2rem;
 }

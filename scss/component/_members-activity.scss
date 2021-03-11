@@ -30,7 +30,7 @@ img {
     border-radius: 50%;
 }}}
 
-
+// Messager 
 .messenger-container {
     background: whitesmoke;
     padding: 1em;
@@ -40,12 +40,23 @@ img {
 input {
     display: block;
     margin: 1em 0 1em 0;
+    height: 2em;
+    line-height: 2em;
 textarea {
     display: block;
     margin: 1em;
+    line-height: 2em;
 }}}
 
-.widget-container{
+.form-container{
     display: flex;
     flex-direction: column;
+}
+.button-primary {
+    background-color: darkgrey;
+    height: 2.75em;
+    width: 50%;
+    margin: 1rem auto;
+    border-radius: .5em;
+    box-shadow: inset;
 }

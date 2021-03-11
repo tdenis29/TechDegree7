@@ -5,7 +5,7 @@
         <title>The WebApp DashBoard Project</title>
         <meta name="description" content="The HTML5 Herald">
         <link rel="stylesheet" href="css/main.css">
-        <!-- <link rel="stylesheet" href="toggle" -->
+        <link rel="stylesheet" href="css/toggle-switch.css">
     </head>
     <body>
         <header>
@@ -193,7 +193,7 @@
                                                         
                             <div class="messenger-container">
                                 <h3>Message User</h3>
-                                 <form class="widget-container">
+                                 <form class="form-container">
                                     <input type="text" placeholder="Search for user"class="form-field" id="userField">
                                     <textarea placeholder="Message for user" class="form-area" id= "messageField" rows="6"></textarea>
                                     <button class="button-primary" id="send">Send</button>
@@ -203,15 +203,26 @@
                                 <!-- local settings widget -->
                             <section class="settings">
                                     <h3>Settings</h3>
-                                    <!-- custom CSS toggle code-->
-                                    <!-- custom CSS toggle code-->
+                                    <label class="switch-light switch-candy" onclick="">
+                                        <input type="checkbox">
+                                      
+                                        <strong>
+                                          Wireless
+                                        </strong>
+                                      
+                                        <span>
+                                          <span>Off</span>
+                                          <span>On</span>
+                                          <a></a>
+                                        </span>
+                                      </label>
                                 <select class="form-field" id="timezone">
                                     <option disabled selected>Select a Timezone</option>
                                     <option>Eastern</option>
                                     <!-- more options -->
                                 </select>
                                  <div class="settings-button" >
-                                    <button class="button-primary" id="save">Save</button>
+                                    <button class="save-button-primary" id="save">Save</button>
                                     <button class="button-disabled" id="cancel">Cancel</button>
                                 </div>
                             </section>
