@@ -54,19 +54,22 @@ span {
 }}}
 .form-field {
     height: 2.75em;
+    border-radius: .5em;
 }
 .settings-button {
     width: 100%;
     display: flex;
     justify-content: space-between;
     text-align: center;
-    padding: 1em;
+    padding: 1em 0 1em 0; 
+
 }
 .save-button-primary {
     width: 45%;
     height: 2.75em;
     background-color: black;
     color: white;
+    border-radius: .5em;
 
 }
 .button-disabled {
@@ -74,4 +77,5 @@ span {
     height: 2.75em;
     background-color: black;
     color: white;
+    border-radius: .5em;
 }

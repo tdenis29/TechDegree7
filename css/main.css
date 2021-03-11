@@ -526,7 +526,7 @@ h1 {
 }
 
 .social-card {
-  width: 25%;
+  flex-basis: 1/3;
   background-color: whitesmoke;
   display: flex;
   margin: 1rem;
@@ -541,6 +541,10 @@ h1 {
   background-color: whitesmoke;
   height: 2rem;
   width: 2rem;
+}
+
+.social-card p:nth-child(2) {
+  font-size: 2em;
 }
 
 .recent-activity {
@@ -665,6 +669,7 @@ h1 {
 
 .form-field {
   height: 2.75em;
+  border-radius: 0.5em;
 }
 
 .settings-button {
@@ -672,7 +677,7 @@ h1 {
   display: flex;
   justify-content: space-between;
   text-align: center;
-  padding: 1em;
+  padding: 1em 0 1em 0;
 }
 
 .save-button-primary {
@@ -680,6 +685,7 @@ h1 {
   height: 2.75em;
   background-color: black;
   color: white;
+  border-radius: 0.5em;
 }
 
 .button-disabled {
@@ -687,6 +693,7 @@ h1 {
   height: 2.75em;
   background-color: black;
   color: white;
+  border-radius: 0.5em;
 }
 
 /*# sourceMappingURL=main.css.map */
