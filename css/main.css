@@ -23,6 +23,20 @@
     grid-template-areas: "header header" "nav main" "nav main";
   }
 }
+.main {
+  display: grid;
+}
+
+@media (min-width: 768px) {
+  .main {
+    grid-template-columns: 50%;
+  }
+}
+@media (min-width: 768px) {
+  .traffic, .social {
+    grid-column: 1/span 2;
+  }
+}
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
@@ -370,7 +384,7 @@ template {
   list-style: none;
 }
 
-header {
+.header {
   height: 5rem;
   width: 100%;
   border-bottom: 1px solid black;
@@ -381,7 +395,6 @@ header {
 }
 
 h1 {
-  flex: 1 1 0;
   padding-left: 0.5rem;
   color: white;
 }
@@ -396,7 +409,6 @@ h1 {
 
 .notify {
   align-items: center;
-  flex-basis: auto;
   margin-right: 1rem;
   fill: white;
 }

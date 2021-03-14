@@ -1,4 +1,4 @@
-header {
+.header {
     height: 5rem;
     width: 100%;
     border-bottom: 1px solid black;
@@ -8,7 +8,6 @@ header {
     align-items: center;
     } 
     h1 {
-        flex: 1 1 0;
         padding-left: .5rem;
         color: white;
     }
@@ -17,17 +16,15 @@ header {
         display: flex;
         margin-left: auto;
         border-left: 1px solid white;;
-     
         align-items: center;
         color: white;
      
     }
     .notify {
        align-items: center;
-       flex-basis: auto;
+       
        margin-right: 1rem;
        fill: white;
-       
     }
     .bell-icon {
     height: 2em;

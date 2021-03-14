@@ -27,3 +27,16 @@ grid-template-areas:
         "nav main";
         }
         }
+.main {
+    display: grid;
+}
+    @media (min-width: 768px) {
+    .main {
+    grid-template-columns: 50% ;
+    }
+    }
+    @media (min-width: 768px) {
+        .traffic, .social {
+        grid-column: 1 / span 2;
+        }
+        }
