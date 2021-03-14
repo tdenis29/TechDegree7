@@ -73,6 +73,8 @@
   /* inherit from label
  */
   .switch-light strong {
+  
+    left: 0;
     font-weight: inherit; }
   .switch-light > span {
     position: relative;

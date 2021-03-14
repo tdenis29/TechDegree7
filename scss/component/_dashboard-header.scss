@@ -6,7 +6,7 @@ text-align: center;
 h2 {
  background-color: whitesmoke;
  border-bottom: none;
- padding: 1.1rem;
+ padding: 1rem;
 }}
 
 .main-header-search {
@@ -19,7 +19,7 @@ border-left: solid 1px black;
 border-bottom-left-radius: .5rem;
 padding: 1.125rem;
 input {
-    width: 60%;
+    width: 100%;
     justify-self: right;
     padding: .2rem;
     margin-left: auto;
@@ -34,7 +34,6 @@ input {
 }
 // Alert bar
 .alert {
-    text-align: center;
     background-color: black;
     padding: 1rem;
     width: 100%;

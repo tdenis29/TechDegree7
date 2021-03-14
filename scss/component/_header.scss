@@ -5,12 +5,13 @@ header {
     margin: 0 auto;
     display: flex;
     align-items: center;
+   
+    
     } 
 
     h1 {
         flex-basis: 75%;
         padding-left: .5rem;
-        flex-shrink: 2;
         color: white;
     }
 
@@ -20,24 +21,25 @@ header {
         border-left: 1px solid white;;
         flex-basis: 30%;
         align-items: center;
-        position:absolute;
-        right:0;
+        // position:absolute;
+        // right:0;
         color: white;
+        flex: 1 1 auto;
+        
     }
     .notify {
        align-items: center;
        flex-basis: auto;
        margin-right: 1rem;
-       fill: white;
-       
-       
+       fill: white;     
     }
+
     .bell-icon {
     height: 2em;
     width: 2em;
-    position: absolute;
-    right: 175px;
-    top: 1.5rem;
+    // position: absolute;
+    // right: 175px;
+    // top: 1.5rem;
     color: white;
   
     }

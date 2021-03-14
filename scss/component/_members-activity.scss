@@ -1,6 +1,6 @@
 // Members
 .members {
-    display: block;
+   display: block;
     width: 100%;
 
 h3 {
@@ -11,18 +11,25 @@ h3 {
     padding: 1em;
     margin: .5em;
     display: flex;
+    justify-content: center;
     align-items: center;
-    flex-grow: 1;
-    
+    flex: 1 1 0;
+    position: relative; 
+    min-width: 0;  
 img {
     border-radius: 50%;
-    height: 6rem;
-    width: 6rem;
-    margin-right: 2em;
+    height: 5rem;
+    width: 5rem;
+    margin-right: 1em;
 }}}
 .members-text {
     padding-right: 1em;
-}
+    font-size: 1em;
+a {
+    font-size: .8em;
+    
+}}
+
 
 // Activity
 .recent-activity{
@@ -34,17 +41,19 @@ img {
     margin: .5em;
     display: flex;
     align-items: center;
-    justify-content: left;
+    justify-content: center;
     
 img {
     border-radius: 50%;
-    height: 6rem;
-    width: 6rem;
-    margin-right: 2em;
+    height: 5rem;
+    width: 5rem;
+    margin-right: 1em;
 .activity-text{
     display: flex;
     flex-direction: column;
     justify-self: center;
-  
-  
-}}}}
+ 
+    .activity-text p:nth-child(2){
+        font-size: .8em;
+        font-style: italic;
+    }}}}}

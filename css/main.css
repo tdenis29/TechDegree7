@@ -357,7 +357,6 @@ header {
 h1 {
   flex-basis: 75%;
   padding-left: 0.5rem;
-  flex-shrink: 2;
   color: white;
 }
 
@@ -367,9 +366,8 @@ h1 {
   border-left: 1px solid white;
   flex-basis: 30%;
   align-items: center;
-  position: absolute;
-  right: 0;
   color: white;
+  flex: 1 1 auto;
 }
 
 .notify {
@@ -382,9 +380,6 @@ h1 {
 .bell-icon {
   height: 2em;
   width: 2em;
-  position: absolute;
-  right: 175px;
-  top: 1.5rem;
   color: white;
 }
 
@@ -425,7 +420,7 @@ h1 {
 .dashboard-header h2 {
   background-color: whitesmoke;
   border-bottom: none;
-  padding: 1.1rem;
+  padding: 1rem;
 }
 
 .main-header-search {
@@ -439,7 +434,7 @@ h1 {
   padding: 1.125rem;
 }
 .main-header-search input {
-  width: 60%;
+  width: 100%;
   justify-self: right;
   padding: 0.2rem;
   margin-left: auto;
@@ -454,7 +449,6 @@ h1 {
 }
 
 .alert {
-  text-align: center;
   background-color: black;
   padding: 1rem;
   width: 100%;
@@ -551,6 +545,9 @@ h1 {
   display: block;
   width: 100%;
 }
+.recent-activity h3 {
+  padding: 1em;
+}
 .recent-activity .activity-container {
   background: whitesmoke;
   padding: 1em;
@@ -558,6 +555,11 @@ h1 {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+.activity-text p:nth-child(2) {
+  font-size: 0.8em;
+  font-style: italic;
 }
 
 .members {
@@ -572,18 +574,25 @@ h1 {
   padding: 1em;
   margin: 0.5em;
   display: flex;
+  justify-content: center;
   align-items: center;
-  flex-grow: 1;
+  flex: 1 1 0;
+  position: relative;
+  min-width: 0;
 }
 .members .members-container img {
   border-radius: 50%;
-  height: 6rem;
-  width: 6rem;
-  margin-right: 2em;
+  height: 5rem;
+  width: 5rem;
+  margin-right: 1em;
 }
 
 .members-text {
   padding-right: 1em;
+  font-size: 1em;
+}
+.members-text a {
+  font-size: 0.8em;
 }
 
 .recent-activity {
@@ -596,18 +605,22 @@ h1 {
   margin: 0.5em;
   display: flex;
   align-items: center;
-  justify-content: left;
+  justify-content: center;
 }
 .recent-activity .activity-container img {
   border-radius: 50%;
-  height: 6rem;
-  width: 6rem;
-  margin-right: 2em;
+  height: 5rem;
+  width: 5rem;
+  margin-right: 1em;
 }
 .recent-activity .activity-container img .activity-text {
   display: flex;
   flex-direction: column;
   justify-self: center;
+}
+.recent-activity .activity-container img .activity-text .activity-text p:nth-child(2) {
+  font-size: 0.8em;
+  font-style: italic;
 }
 
 .messenger-container {
@@ -653,11 +666,11 @@ h1 {
 }
 
 .switch-light {
-  display: flex;
   margin: 0 auto;
   flex-direction: row;
-  display: block;
-  padding: 1em;
+  justify-content: space-between;
+  align-items: left;
+  padding: 1em 1em 1em 0;
   width: 75%;
 }
 .switch-light strong {

@@ -41,16 +41,17 @@ textarea {
     flex-direction: column; 
 }
 .switch-light{
- display: flex;
  margin: 0 auto;
  flex-direction: row;
- display: block;
- padding: 1em;
+justify-content: space-between;
+align-items: left;;
+ padding: 1em 1em 1em 0;
  width: 75%;
 strong {
     display: inline-block;
 span {
     display: block;
+    
 }}}
 .form-field {
     height: 2.75em;
@@ -79,3 +80,4 @@ span {
     color: white;
     border-radius: .5em;
 }
+
