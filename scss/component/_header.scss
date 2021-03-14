@@ -1,16 +1,14 @@
 header {
     height: 5rem;
+    width: 100%;
     border-bottom: 1px solid black;
     background-color:black;
     margin: 0 auto;
     display: flex;
     align-items: center;
-   
-    
     } 
-
     h1 {
-        flex-basis: 75%;
+        flex: 1 1 0;
         padding-left: .5rem;
         color: white;
     }
@@ -19,30 +17,22 @@ header {
         display: flex;
         margin-left: auto;
         border-left: 1px solid white;;
-        flex-basis: 30%;
+     
         align-items: center;
-        // position:absolute;
-        // right:0;
         color: white;
-        flex: 1 1 auto;
-        
+     
     }
     .notify {
        align-items: center;
        flex-basis: auto;
        margin-right: 1rem;
-       fill: white;     
+       fill: white;
+       
     }
-
     .bell-icon {
     height: 2em;
     width: 2em;
-    // position: absolute;
-    // right: 175px;
-    // top: 1.5rem;
-    color: white;
-  
-    }
+}
     .profile-pic img {
     display: inline-block;
     height: 3rem;

@@ -19,7 +19,7 @@ border-left: solid 1px black;
 border-bottom-left-radius: .5rem;
 padding: 1.125rem;
 input {
-    width: 100%;
+    width: 75%;
     justify-self: right;
     padding: .2rem;
     margin-left: auto;
@@ -34,6 +34,7 @@ input {
 }
 // Alert bar
 .alert {
+    text-align: center;
     background-color: black;
     padding: 1rem;
     width: 100%;
