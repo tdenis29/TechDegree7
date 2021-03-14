@@ -12,44 +12,49 @@ h3 {
     margin: .5em;
     display: flex;
     justify-content: center;
-    align-items: center;
-    position: relative; 
-    min-width: 0;
+    align-items: center; 
+    min-width: fit-content;
     flex: 1 1 0; 
 img {
     border-radius: 50%;
-    height: 5rem;
-    width: 5rem;
+    height: 4rem;
+    width: 4rem;
     margin-right: 1em;
 }}}
 .members-text {
     padding-right: 1em;
     font-size: 1em;
-}
+a {
+    font-size: .9em;
+}}
 
 // Activity
 .recent-activity{
     display: block;
     width: 100%;
+   
+    
 .activity-container{
     background: whitesmoke;
     padding: 1em;
     margin: .5em;
     display: flex;
-    align-items: center;
-    justify-content: center;
-    
+    align-items: center; 
 img {
     border-radius: 50%;
-    height: 5rem;
-    width: 5rem;
+    height: 4rem;
+    width: 4rem;
     margin-right: 1em;
 .activity-text{
     display: flex;
     flex-direction: column;
     justify-self: center;
- 
-    .activity-text p:nth-child(2){
-        font-size: .8em;
-        font-style: italic;
-    }}}}}
+   }}}}
+
+.activity-text p:nth-child(2){
+    font-size: .8em;
+    font-style: italic;
+}
+.recent-activity h3 {
+    padding: 1em;
+}

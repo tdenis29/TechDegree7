@@ -565,27 +565,6 @@ h1 {
   font-size: 2em;
 }
 
-.recent-activity {
-  display: block;
-  width: 100%;
-}
-.recent-activity h3 {
-  padding: 1em;
-}
-.recent-activity .activity-container {
-  background: whitesmoke;
-  padding: 1em;
-  margin: 0.5em;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.activity-text p:nth-child(2) {
-  font-size: 0.8em;
-  font-style: italic;
-}
-
 .members {
   display: block;
   width: 100%;
@@ -600,20 +579,22 @@ h1 {
   display: flex;
   justify-content: center;
   align-items: center;
-  position: relative;
-  min-width: 0;
+  min-width: fit-content;
   flex: 1 1 0;
 }
 .members .members-container img {
   border-radius: 50%;
-  height: 5rem;
-  width: 5rem;
+  height: 4rem;
+  width: 4rem;
   margin-right: 1em;
 }
 
 .members-text {
   padding-right: 1em;
   font-size: 1em;
+}
+.members-text a {
+  font-size: 0.9em;
 }
 
 .recent-activity {
@@ -626,12 +607,11 @@ h1 {
   margin: 0.5em;
   display: flex;
   align-items: center;
-  justify-content: center;
 }
 .recent-activity .activity-container img {
   border-radius: 50%;
-  height: 5rem;
-  width: 5rem;
+  height: 4rem;
+  width: 4rem;
   margin-right: 1em;
 }
 .recent-activity .activity-container img .activity-text {
@@ -639,9 +619,14 @@ h1 {
   flex-direction: column;
   justify-self: center;
 }
-.recent-activity .activity-container img .activity-text .activity-text p:nth-child(2) {
+
+.activity-text p:nth-child(2) {
   font-size: 0.8em;
   font-style: italic;
+}
+
+.recent-activity h3 {
+  padding: 1em;
 }
 
 .messenger-container {

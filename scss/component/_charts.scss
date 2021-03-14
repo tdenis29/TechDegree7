@@ -70,22 +70,3 @@ flex-wrap: nowrap;
 .social-card p:nth-child(2){
     font-size: 2em;
 }
-.recent-activity{
-    display: block;
-    width: 100%;
-    h3 {
-      padding: 1em;  
-    }
-.activity-container{
-    background: whitesmoke;
-    padding: 1em;
-    margin: .5em;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-
-}}
-.activity-text p:nth-child(2){
-    font-size: .8em;
-    font-style: italic;
-}
