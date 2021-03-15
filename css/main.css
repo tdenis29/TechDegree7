@@ -425,7 +425,7 @@ body {
   align-items: center;
   color: white;
   margin-left: auto;
-  width: 25%;
+  width: 30%;
 }
 
 .notify {
@@ -567,54 +567,6 @@ body {
 }
 .mobile-user h3 {
   padding: 1rem;
-}
-
-.social-container {
-  display: flex;
-  width: 95%;
-  justify-items: center;
-  flex-direction: row;
-  margin: 0 auto;
-  flex-wrap: wrap;
-}
-.social-container h3 {
-  padding: 1rem;
-  width: 100%;
-}
-
-.social-card {
-  width: 100%;
-  background-color: whitesmoke;
-  display: flex;
-  margin: 1rem;
-  justify-content: center;
-  margin: 1em auto;
-  padding: 2em;
-}
-
-.social-card p:nth-child(2) {
-  font-size: 2em;
-}
-
-.social-image {
-  height: 3rem;
-  width: 3rem;
-  background-color: purple;
-  border: solid 1px transparent;
-  border-radius: 50%;
-}
-
-.social-svg {
-  width: 60%;
-  height: 60%;
-  display: block;
-  margin: 0 auto;
-}
-
-.to-fill {
-  fill: white;
-  display: block;
-  margin: 0 auto;
 }
 
 .members {
@@ -765,6 +717,54 @@ body {
   background-color: black;
   color: white;
   border-radius: 0.5em;
+}
+
+.social-container {
+  display: flex;
+  width: 95%;
+  justify-items: center;
+  flex-direction: row;
+  margin: 0 auto;
+  flex-wrap: wrap;
+}
+.social-container h3 {
+  padding: 1rem;
+  width: 100%;
+}
+
+.social-card {
+  width: 100%;
+  background-color: whitesmoke;
+  display: flex;
+  margin: 1rem;
+  justify-content: center;
+  margin: 1em auto;
+  padding: 2em;
+}
+
+.social-card p:nth-child(2) {
+  font-size: 2em;
+}
+
+.social-image {
+  height: 3rem;
+  width: 3rem;
+  background-color: purple;
+  border: solid 1px transparent;
+  border-radius: 50%;
+}
+
+.social-svg {
+  width: 60%;
+  height: 60%;
+  display: block;
+  margin: 0 auto;
+}
+
+.to-fill {
+  fill: white;
+  display: block;
+  margin: 0 auto;
 }
 
 /*# sourceMappingURL=main.css.map */
