@@ -1,29 +1,25 @@
-header {
+.header {
 height: 4em;
 width: 100%;
 border-bottom: solid 1px black;
-margin: 0 auto;
 background-color: black;
 display: flex;
 align-items: center;
-
-
 h1 {
     color: white;
     width: 50%;
     line-height: 1;
     font-size: 1.2em;
-    flex-grow: 2;
+    
     padding: .5em;
 }}
-
 .profile-pic {
     display: flex;
     border-left: 1px solid white;;
     align-items: center;
     color: white;
     margin-left: auto;
-    flex-grow:1;
+   width: 30%; 
 }
 
 .notify {
