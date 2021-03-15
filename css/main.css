@@ -584,13 +584,13 @@ body {
   border: 1px solid transparent;
   border-radius: 0.5em;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
 }
 .alert strong {
   color: white;
   padding: 1em;
 }
-.alert span {
+.alert p {
   display: inline;
   padding-right: 1rem;
   color: white;
