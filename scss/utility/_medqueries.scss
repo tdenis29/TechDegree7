@@ -17,6 +17,9 @@ grid-template-areas:
     .main {
     grid-area: main;
     }
+    .widget-container-full, .widget-container-half {
+        width: 95vw;
+        }
 // 768px
     @media (min-width: 768px) {
         .grid-container {
@@ -42,27 +45,37 @@ grid-template-areas:
         .alert {
             grid-column: 1 / span 2;
         }
-        .traffic, .social-container {
+        .traffic, .social-container, .mobile-user, .daily {
         grid-column: 1 / span 2;
-        .social-container{
-            display: flex;
-            flex-direction: row;
-            
-        .social-card{
-            width: auto;
-        }}}
+        }
     
        }
        @media (min-width: 768px) {
-        .daily, .members, .message {
+        .members, .message {
         grid-column: 1 / span 1;
         }
         }
         @media (min-width: 768px) {
-            .mobile, .activity, .settings {
+             .activity, .settings {
             grid-column: 2 / span 1;
             }
             }
+            @media (min-width: 768px) {
+                .widget-container-full {
+                width: 90vw;
+                }
+                .widget-container-half {
+          
+                width: 45vw;
+                }
+                }
+                  
+                 
+                        
+
+
+
+                        
 // 1068px
 @media (min-width: 1086px) {
     .grid-container {
@@ -90,13 +103,7 @@ grid-template-columns: 50% ;
     }
     .traffic, .social-container {
     grid-column: 1 / span 2;
-    .social-container{
-        display: flex;
-        flex-direction: row;
-        
-    .social-card{
-        width: auto;
-    }}}
+  }
 
    }
    @media (min-width: 1086px) {
@@ -105,7 +112,16 @@ grid-template-columns: 50% ;
     }
     }
     @media (min-width: 1086px) {
-        .mobile, .activity, .settings {
+        .mobile-user, .activity, .settings {
         grid-column: 2 / span 1;
         }
         }
+
+        @media (min-width: 1086px) {
+            .widget-container-full {
+                width: 95vw;
+                }
+            .mobile-user, .daily{
+                width: 45vw;
+            }}
+    

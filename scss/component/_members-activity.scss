@@ -11,10 +11,11 @@ h3 {
     padding: 1em;
     margin: .5em;
     display: flex;
-    justify-content: center;
+    justify-content: left;
     align-items: center; 
     min-width: fit-content;
     flex: 1 1 0; 
+    position: relative;
 img {
     border-radius: 50%;
     height: 4rem;
@@ -27,7 +28,11 @@ img {
 a {
     font-size: .9em;
 }}
-
+.date{
+    float: right;
+    padding-left: 4em;
+    margin-right: auto;
+}
 // Activity
 .recent-activity{
     display: block;
