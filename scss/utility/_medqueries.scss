@@ -53,4 +53,59 @@ grid-template-areas:
         }}}
     
        }
-       
+       @media (min-width: 768px) {
+        .daily, .members, .message {
+        grid-column: 1 / span 1;
+        }
+        }
+        @media (min-width: 768px) {
+            .mobile, .activity, .settings {
+            grid-column: 2 / span 1;
+            }
+            }
+// 1068px
+@media (min-width: 1086px) {
+    .grid-container {
+    grid-template-columns: 55px 1fr;
+    grid-template-areas:
+    "header header"
+    "nav main"
+    "nav main";
+    }
+    }
+.main {
+display: grid;
+}
+@media (min-width: 1086px) {
+.main {
+grid-template-columns: 50% ;
+}
+}
+@media (min-width: 1086px) {
+    .dashboard-header {
+        grid-column: 1 / span 2;
+    }
+    .alert {
+        grid-column: 1 / span 2;
+    }
+    .traffic, .social-container {
+    grid-column: 1 / span 2;
+    .social-container{
+        display: flex;
+        flex-direction: row;
+        
+    .social-card{
+        width: auto;
+    }}}
+
+   }
+   @media (min-width: 1086px) {
+    .daily, .members, .message {
+    grid-column: 1 / span 1;
+    }
+    }
+    @media (min-width: 1086px) {
+        .mobile, .activity, .settings {
+        grid-column: 2 / span 1;
+        }
+        }
