@@ -1,42 +1,3 @@
-.grid-container {
-  display: grid;
-  grid-template-columns: 100%;
-  grid-template-rows: auto;
-  grid-template-areas: "header" "nav" "main";
-}
-
-.header {
-  grid-area: header;
-}
-
-.main-nav {
-  grid-area: nav;
-}
-
-.main {
-  grid-area: main;
-}
-
-@media (min-width: 768px) {
-  .grid-container {
-    grid-template-columns: 55px 1fr;
-    grid-template-areas: "header header" "nav main" "nav main";
-  }
-}
-.main {
-  display: grid;
-}
-
-@media (min-width: 768px) {
-  .main {
-    grid-template-columns: 50%;
-  }
-}
-@media (min-width: 768px) {
-  .traffic, .social {
-    grid-column: 1/span 2;
-  }
-}
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
@@ -384,27 +345,35 @@ template {
   list-style: none;
 }
 
-.header {
-  height: 5rem;
+body {
   width: 100%;
-  border-bottom: 1px solid black;
-  background-color: black;
+}
+
+header {
+  height: 4em;
+  width: 100%;
+  border-bottom: solid 1px black;
   margin: 0 auto;
+  background-color: black;
   display: flex;
   align-items: center;
 }
-
-h1 {
-  padding-left: 0.5rem;
+header h1 {
   color: white;
+  width: 50%;
+  line-height: 1;
+  font-size: 1.2em;
+  flex-grow: 2;
+  padding: 0.5em;
 }
 
 .profile-pic {
   display: flex;
-  margin-left: auto;
   border-left: 1px solid white;
   align-items: center;
   color: white;
+  margin-left: auto;
+  flex-grow: 1;
 }
 
 .notify {
@@ -416,12 +385,13 @@ h1 {
 .bell-icon {
   height: 2em;
   width: 2em;
+  margin-left: auto;
 }
 
 .profile-pic img {
   display: inline-block;
-  height: 3rem;
-  width: 3rem;
+  height: 2rem;
+  width: 2rem;
   border-radius: 50%;
   align-self: center;
   padding-left: 0.5rem;
@@ -429,6 +399,8 @@ h1 {
 
 .profile-pic h3 {
   padding-left: 0.5rem;
+  font-size: 0.9em;
+  padding-right: 0.5em;
 }
 
 .main-nav {
@@ -465,32 +437,32 @@ h1 {
   display: flex;
   border-bottom: 1px solid black;
   border-left: solid 1px black;
-  border-bottom-left-radius: 0.5rem;
+  border-bottom-left-radius: 0.5em;
   padding: 1.125rem;
 }
 .main-header-search input {
   width: 75%;
   justify-self: right;
-  padding: 0.2rem;
+  padding: 0.5em;
   margin-left: auto;
-  margin-right: 0.5rem;
+  margin-right: 1em;
   border-radius: 5px;
   height: 2em;
   line-height: 2em;
 }
 
 .headline {
-  padding: 1rem;
+  padding: 1em;
 }
 
 .alert {
   text-align: center;
   background-color: black;
-  padding: 1rem;
+  padding: 1em;
   width: 100%;
   margin: 0 auto;
   border: 1px solid transparent;
-  border-radius: 0.5rem;
+  border-radius: 0.5em;
   display: flex;
   justify-content: center;
 }
@@ -500,7 +472,7 @@ h1 {
 }
 .alert span {
   display: inline;
-  padding-right: 2rem;
+  padding-right: 1rem;
   color: white;
 }
 
@@ -516,14 +488,16 @@ h1 {
 }
 .traffic h3 {
   display: inline;
-  padding: 1rem;
+  padding: 1em;
+  width: 30%;
 }
 .traffic ul {
   display: flex;
 }
 .traffic li {
   display: inline;
-  padding: 0.5rem;
+  padding: 0.2rem;
+  width: 50%;
 }
 
 .daily {
@@ -545,10 +519,10 @@ h1 {
 
 .social-container {
   display: flex;
-  width: 100%;
-  justify-content: space-between;
+  width: 95%;
   justify-items: center;
-  flex-wrap: wrap;
+  flex-direction: column;
+  margin: 0 auto;
 }
 .social-container h3 {
   padding: 1rem;
@@ -556,25 +530,38 @@ h1 {
 }
 
 .social-card {
-  flex-basis: 1/3;
+  width: 100%;
   background-color: whitesmoke;
   display: flex;
   margin: 1rem;
   justify-content: center;
-  height: 80%;
+  margin: 1em auto;
   padding: 2em;
-  flex: 1 1 auto;
-  flex-wrap: nowrap;
-}
-
-.socialimage {
-  background-color: whitesmoke;
-  height: 2rem;
-  width: 2rem;
 }
 
 .social-card p:nth-child(2) {
   font-size: 2em;
+}
+
+.social-image {
+  height: 3rem;
+  width: 3rem;
+  background-color: purple;
+  border: solid 1px transparent;
+  border-radius: 50%;
+}
+
+.social-svg {
+  width: 60%;
+  height: 60%;
+  display: block;
+  margin: 0 auto;
+}
+
+.to-fill {
+  fill: white;
+  display: block;
+  margin: 0 auto;
 }
 
 .members {

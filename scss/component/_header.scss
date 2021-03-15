@@ -1,39 +1,47 @@
-.header {
-    height: 5rem;
-    width: 100%;
-    border-bottom: 1px solid black;
-    background-color:black;
-    margin: 0 auto;
-    display: flex;
-    align-items: center;
-    } 
-    h1 {
-        padding-left: .5rem;
-        color: white;
-    }
+header {
+height: 4em;
+width: 100%;
+border-bottom: solid 1px black;
+margin: 0 auto;
+background-color: black;
+display: flex;
+align-items: center;
 
-    .profile-pic {
-        display: flex;
-        margin-left: auto;
-        border-left: 1px solid white;;
-        align-items: center;
-        color: white;
-     
-    }
-    .notify {
-       align-items: center;
-       
-       margin-right: 1rem;
-       fill: white;
-    }
-    .bell-icon {
+
+h1 {
+    color: white;
+    width: 50%;
+    line-height: 1;
+    font-size: 1.2em;
+    flex-grow: 2;
+    padding: .5em;
+}}
+
+.profile-pic {
+    display: flex;
+    border-left: 1px solid white;;
+    align-items: center;
+    color: white;
+    margin-left: auto;
+    flex-grow:1;
+}
+
+.notify {
+    align-items: center;
+    margin-right: 1rem;
+    fill: white;
+}
+
+ .bell-icon {
     height: 2em;
     width: 2em;
+    margin-left: auto;
 }
-    .profile-pic img {
+
+.profile-pic img {
     display: inline-block;
-    height: 3rem;
-    width: 3rem;
+    height: 2rem;
+    width: 2rem;
     border-radius: 50%;
     align-self: center;
     padding-left: .5rem;
@@ -41,5 +49,26 @@
 
     .profile-pic h3 {
         padding-left: .5rem;
-   
+        font-size: .9em;
+        padding-right: .5em;
     }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
