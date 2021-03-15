@@ -43,8 +43,9 @@ h3 {
 display: flex;
 width: 95%;
 justify-items: center;
-flex-direction: column;
+flex-direction: row;
 margin: 0 auto;
+flex-wrap: wrap;
 h3 {
     padding: 1rem;
     width: 100%;
