@@ -542,6 +542,7 @@ body {
   display: flex;
   align-items: center;
   text-align: center;
+  width: 100%;
 }
 .dashboard-header h2 {
   background-color: whitesmoke;
@@ -651,7 +652,6 @@ body {
   display: flex;
   justify-content: left;
   align-items: center;
-  min-width: fit-content;
   flex: 1 1 0;
   position: relative;
 }
@@ -821,24 +821,22 @@ body {
 }
 
 .social-image {
-  height: 3rem;
-  width: 3rem;
+  height: 3em;
+  width: 3em;
   background-color: purple;
   border: solid 1px transparent;
   border-radius: 50%;
+  display: flex;
+  justify-content: center;
 }
 
-.social-svg {
-  width: 60%;
-  height: 60%;
-  display: block;
-  margin: 0 auto;
+.social-image svg {
+  width: 50%;
+  height: auto;
 }
 
-.to-fill {
+.social-image svg path {
   fill: white;
-  display: block;
-  margin: 0 auto;
 }
 
 /*# sourceMappingURL=main.css.map */

@@ -15,7 +15,6 @@
     width: 1/3;
     background-color: whitesmoke;
     display: flex;
-   
     justify-content: center;
     margin: 1em auto;
     padding: 2em;
@@ -24,20 +23,18 @@
         font-size: 2em;
     }
     .social-image {
-        height: 3rem;
-        width: 3rem;
+        height: 3em;
+        width: 3em;
         background-color: purple;
         border: solid 1px transparent;
         border-radius: 50%;
+        display: flex;
+        justify-content: center;
     }
-    .social-svg {
-        width: 60%;
-        height: 60%;
-        display: block;
-        margin: 0 auto;
+    .social-image svg {
+        width: 50%;
+        height: auto;
     }
-    .to-fill {
+    .social-image svg path {
         fill: white;
-        display: block;
-        margin: 0 auto;
     }
