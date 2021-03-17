@@ -16,6 +16,7 @@ grid-template-areas:
     }
     .main {
     grid-area: main;
+    grid-template-columns: 100%;
     }
     .widget-container-full, .widget-container-half {
         width: 95vw;
@@ -88,6 +89,7 @@ grid-template-areas:
     }
 .main {
 display: grid;
+
 }
 @media (min-width: 1086px) {
 .main {

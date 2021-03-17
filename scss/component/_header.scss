@@ -23,7 +23,7 @@ h1 {
     right: 5;
 }
 
-.notify {
+.bell-wrap {
     align-items: center;
     margin-right: 1rem;
     fill: white;
@@ -35,6 +35,16 @@ h1 {
     height: 2em;
     width: 2em;
     margin-left: auto;
+}
+
+.notify {
+    position: absolute;
+    right: 5px;
+    top: 0;
+    height: .5em;
+    width: .5em;
+    border-radius: 50%;
+    background-color: lightgreen;
 }
 
 .profile-pic img {

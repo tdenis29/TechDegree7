@@ -15,6 +15,7 @@
 
 .main {
   grid-area: main;
+  grid-template-columns: 100%;
 }
 
 .widget-container-full, .widget-container-half {
@@ -493,7 +494,7 @@ body {
   right: 5;
 }
 
-.notify {
+.bell-wrap {
   align-items: center;
   margin-right: 1rem;
   fill: white;
@@ -505,6 +506,16 @@ body {
   height: 2em;
   width: 2em;
   margin-left: auto;
+}
+
+.notify {
+  position: absolute;
+  right: 5px;
+  top: 0;
+  height: 0.5em;
+  width: 0.5em;
+  border-radius: 50%;
+  background-color: lightgreen;
 }
 
 .profile-pic img {
@@ -548,6 +559,7 @@ body {
   background-color: whitesmoke;
   border-bottom: none;
   padding: 1rem;
+  height: 100%;
 }
 
 .main-header-search {
@@ -652,28 +664,25 @@ body {
   display: flex;
   justify-content: left;
   align-items: center;
-  flex: 1 1 0;
-  position: relative;
 }
 .members .members-container img {
   border-radius: 50%;
   height: 4rem;
   width: 4rem;
   margin-right: 1em;
+  min-width: 0;
 }
 
 .members-text {
   padding-right: 1em;
   font-size: 1em;
+  flex: 1 1 0;
+  min-width: 0;
 }
 .members-text a {
   font-size: 0.9em;
-}
-
-.date {
-  float: right;
-  padding-left: 4em;
-  margin-right: auto;
+  flex: 1 1 0;
+  min-width: 0;
 }
 
 .recent-activity {

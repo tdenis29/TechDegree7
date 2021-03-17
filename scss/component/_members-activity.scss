@@ -13,25 +13,26 @@ h3 {
     display: flex;
     justify-content: left;
     align-items: center; 
-    flex: 1 1 0; 
-    position: relative;
+   
+    
 img {
     border-radius: 50%;
     height: 4rem;
     width: 4rem;
     margin-right: 1em;
+    min-width: 0;
 }}}
 .members-text {
     padding-right: 1em;
     font-size: 1em;
+    flex: 1 1 0; 
+    min-width: 0;
 a {
     font-size: .9em;
+    flex: 1 1 0;
+    min-width: 0;
 }}
-.date{
-    float: right;
-    padding-left: 4em;
-    margin-right: auto;
-}
+
 // Activity
 .recent-activity{
     display: block;
