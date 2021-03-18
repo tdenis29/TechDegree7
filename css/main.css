@@ -708,7 +708,8 @@ body {
   border: transparent;
   background-color: whitesmoke;
   flex: 1 1 0;
-  border-radius: 25%;
+  border-radius: 16px;
+  height: 1.3em;
 }
 
 .active {
