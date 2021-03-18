@@ -122,13 +122,22 @@ let weeklyTrafficData = {
 // update charts
 const trafficBtn = document.getElementById("trafficNav")
 
+
 trafficBtn.addEventListener('click', (button => {
+    button.stopPropagation();
+let ul = document.getElementsByClassName('traffic-nav-link');
+
+Array.from(ul).forEach(ul => {
+    ul.classList.remove("active");
+})
+button.target.classList.add('active');
  if (button.target.textContent === "Daily") {
        let trafficChart = new Chart(trafficCanvas, {
             type: 'line',
             data: dailyTrafficData,
             options: trafficOptions
             });
+        
  }
 else if (button.target.textContent === "Weekly") {
     let trafficChart = new Chart(trafficCanvas, {
@@ -155,6 +164,3 @@ else if (button.target.textContent === "Hourly"){
 }));
 
 
-// daily.addEventListener('click', (e) =>{
-//     addData(trafficChart, dailyTraffic.labels, dailyTraffic.datasets[0].data);
-//     });
