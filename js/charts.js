@@ -124,6 +124,7 @@ const trafficBtn = document.getElementById("trafficNav")
 
 
 trafficBtn.addEventListener('click', (button => {
+if (button.target.nodeName === "BUTTON"){
     button.stopPropagation();
 let ul = document.getElementsByClassName('traffic-nav-link');
 
@@ -161,6 +162,6 @@ else if (button.target.textContent === "Hourly"){
         options: trafficOptions
         });
 }
-}));
+}}));
 
 

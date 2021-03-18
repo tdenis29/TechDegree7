@@ -22,9 +22,15 @@ padding: .2rem;
 width: 50%;
 }
 }
+
+.traffic-nav-link {
+    border: none;
+    margin-right: 1em;
+    background-color: whitesmoke;
+}
 .active {
     background-color: chartreuse;
-    color: green;
+  
 }
 // half size widgets
 .daily {
