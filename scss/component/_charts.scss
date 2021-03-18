@@ -24,9 +24,10 @@ width: 50%;
 }
 
 .traffic-nav-link {
-    border: none;
-    margin-right: 1em;
+    border: transparent;
     background-color: whitesmoke;
+    flex: 1 1 0;
+    border-radius: 25%;
 }
 .active {
     background-color: chartreuse;

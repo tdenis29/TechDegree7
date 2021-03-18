@@ -49,8 +49,11 @@ grid-template-areas:
         .traffic, .social-container, .mobile-user, .daily {
         grid-column: 1 / span 2;
         }
-    
+        .social-card {
+            width: 30%;
+        }
        }
+
        @media (min-width: 768px) {
         .members, .message {
         grid-column: 1 / span 1;
