@@ -53,10 +53,12 @@ grid-template-areas:
             width: 30%;
         }
        }
-       .traffic-nav-link {
-        padding: 0 .5em 0 .5em;
-       }
-
+      
+       @media(min-width: 768px){
+        .traffic-nav-link {
+            padding: 0 .5em 0 .5em;
+           }
+       } 
        @media (min-width: 768px) {
         .members, .message {
         grid-column: 1 / span 1;

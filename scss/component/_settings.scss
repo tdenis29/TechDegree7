@@ -4,17 +4,57 @@
     padding: 1em;
     margin: .5em;
     align-items: left;
- 
+
+textarea {
+    display: block;
+    margin-top: .5em;
+    line-height: 2em;
+    border: solid 1px gray;
+    width: 100%;
+    border-radius: 4px;
+}}
 input {
     display: block;
     margin: 1em 0 1em 0;
     height: 2em;
     line-height: 2em;
-textarea {
-    display: block;
-    margin: 1em;
-    line-height: 2em;
-}}}
+    border: solid 1px gray; 
+    width: 100%;
+}
+
+.autocomplete {
+    position: relative;
+    display: inline-block;
+}
+.autocomplete-items {
+    position: absolute;
+    border: 1px solid #d4d4d4;
+    border-bottom: none;
+    border-top: none;
+    z-index: 99;
+    top: 100%;
+    left: 0;
+    right: 0;
+}
+
+.autocomplete-items div {
+    padding: .6rem;
+    cursor: pointer;
+    background-color: #fff;
+    border-bottom: 1px solid #d4d4d4;
+  }
+
+  .autocomplete-items div:hover {
+    /*when hovering an item:*/
+    background-color: #e9e9e9;
+  }
+
+  .autocomplete-active {
+    /*when navigating through the items using the arrow keys:*/
+    background-color: $secondarycolor !important;
+    color: #ffffff;
+  }
+
 
 .form-container{
     display: flex;

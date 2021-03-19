@@ -9,7 +9,7 @@
         <link rel="stylesheet" href="css/toggle-switch.css">
     </head>
     <body class="grid-container">
-        <header class="header">
+        <header class="header"id="header">
          <h1>Your App&#8482;</h1>
           
           <div class ="bell-wrap">
@@ -53,7 +53,7 @@
                 <h3>Josh Sullivan</h3>
               </div> 
         </header>
-        <nav class="main-nav">
+        <nav class="main-nav" id="nav">
             <a href="#"class="icon-box">
                 <img class="bordered"src="svgomg/icon-dashboard.svg">
             </a>
@@ -264,8 +264,10 @@
 
                             <div class="messenger-container">
                                 <h3>Message User</h3>
-                                 <form class="form-container">
+                                 <form class="form-container" autocomplete="off">
+                                 <div class="autocomplete">
                                     <input type="text" placeholder="Search for user"class="form-field" id="userField">
+                                </div>
                                     <textarea placeholder="Message for user" class="form-area" id= "messageField" rows="6"></textarea>
                                     <button class="button-primary" id="send">Send</button>
                                 </form>
@@ -274,9 +276,9 @@
                                 <!-- local settings widget -->
                             <div class="settings">
                                     <h3>Settings</h3>
-                                    <div class="toggle-buttons">
-                                    <label class="switch-ios" onclick="">
-                                        <input type="checkbox">
+                                    <div class="switch-ios">
+                                    <label class="switch-ios" >
+                                        <input type="checkbox" id="emailToggle">
                                       
                                         <strong>
                                           Send Email Notifications
@@ -290,8 +292,8 @@
                                       </label>
                                     </div>
                                      <div class="toggle-buttons">
-                                      <label class="switch-ios" onclick="">
-                                        <input type="checkbox">
+                                      <label class="switch-ios" >
+                                        <input type="checkbox" class="switch-ios" id="privateMode">
                                       
                                         <strong>
                                           Set Profile To Public
@@ -304,9 +306,13 @@
                                         </span>
                                       </label>
                                     </div>
-                                <select class="form-field" id="timezone">
+                                <select class="form-field" id="timeZone">
                                     <option disabled selected>Select a Timezone</option>
                                     <option>Eastern</option>
+                                    <option>Pacific</option>
+                                    <option>Mountain</option>
+                                    <option>Central</option>
+
                                     <!-- more options -->
                                 </select>
                                  <div class="settings-button" >
