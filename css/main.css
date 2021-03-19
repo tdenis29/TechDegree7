@@ -54,6 +54,10 @@
     width: 30%;
   }
 }
+.traffic-nav-link {
+  padding: 0 0.5em 0 0.5em;
+}
+
 @media (min-width: 768px) {
   .members, .message {
     grid-column: 1/span 1;
@@ -634,6 +638,7 @@ body {
   width: 100%;
 }
 .dashboard-header h2 {
+  color: gray;
   border-bottom: none;
   padding: 1rem;
   height: 100%;
@@ -716,7 +721,6 @@ body {
   flex: 1 1 0;
   border-radius: 16px;
   height: 1.3em;
-  padding: 0 0.5em 0 0.5em;
 }
 
 .active {
