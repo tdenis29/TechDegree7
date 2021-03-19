@@ -20,19 +20,26 @@
     justify-content: center;
     
     }
+    .social-card p:nth-child(1){
+        color: $primarycolor;
+        font-weight: bold;
+        
+    }
     .social-card p:nth-child(2){
         font-size: 2em;
     }
     .social-image {
         height: 3em;
         width: 3em;
-        background-color: purple;
+        background-color: $primarycolor;
         border: solid 1px transparent;
         border-radius: 50%;
         display: flex;
         justify-content: center;
         align-items: center;
+        margin-right: 1em;
     }
+    
 
     .social-image svg {
         width: 50%;

@@ -475,7 +475,7 @@ body {
   height: 4em;
   width: 100%;
   border-bottom: solid 1px black;
-  background-color: black;
+  background-color: #7039d6;
   display: flex;
   align-items: center;
   position: relative;
@@ -607,7 +607,7 @@ body {
 .main-nav {
   width: 100%;
   display: block;
-  background-color: gray;
+  background-color: #3f398d;
   text-align: center;
 }
 
@@ -618,6 +618,13 @@ body {
   margin-top: 1rem;
   margin-bottom: 1rem;
   padding: 0.5rem;
+  background-color: #3f398d;
+  color: lightgrey;
+  fill: lightgrey;
+}
+
+.bordered {
+  border-left: solid 4px lime;
 }
 
 .dashboard-header {
@@ -627,7 +634,6 @@ body {
   width: 100%;
 }
 .dashboard-header h2 {
-  background-color: whitesmoke;
   border-bottom: none;
   padding: 1rem;
   height: 100%;
@@ -661,7 +667,7 @@ body {
 
 .alert {
   text-align: center;
-  background-color: black;
+  background-color: #7039d6;
   padding: 1em;
   width: 100%;
   margin: 0 auto;
@@ -825,12 +831,13 @@ body {
 }
 
 .button-primary {
-  background-color: darkgrey;
+  background-color: #5e57bb;
   height: 2.75em;
   width: 50%;
   margin: 1rem auto;
   border-radius: 0.5em;
   box-shadow: inset;
+  color: white;
 }
 
 .settings {
@@ -874,7 +881,7 @@ body {
 .save-button-primary {
   width: 45%;
   height: 2.75em;
-  background-color: black;
+  background-color: #5e57bb;
   color: white;
   border-radius: 0.5em;
 }
@@ -882,7 +889,7 @@ body {
 .button-disabled {
   width: 45%;
   height: 2.75em;
-  background-color: black;
+  background-color: gray;
   color: white;
   border-radius: 0.5em;
 }
@@ -909,6 +916,11 @@ body {
   justify-content: center;
 }
 
+.social-card p:nth-child(1) {
+  color: #5e57bb;
+  font-weight: bold;
+}
+
 .social-card p:nth-child(2) {
   font-size: 2em;
 }
@@ -916,12 +928,13 @@ body {
 .social-image {
   height: 3em;
   width: 3em;
-  background-color: purple;
+  background-color: #5e57bb;
   border: solid 1px transparent;
   border-radius: 50%;
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-right: 1em;
 }
 
 .social-image svg {

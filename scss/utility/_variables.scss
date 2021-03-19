@@ -1,0 +1,5 @@
+$primarycolor: #5e57bb;
+$primary-dark: darken($primarycolor, 15%);
+$secondarycolor: #7039d6;
+$secondary-hover: lighten($secondarycolor, 15%);
+$complement: complement($primarycolor);
