@@ -470,17 +470,19 @@ template {
   padding: 0;
   text-decoration: none;
   list-style: none;
+  font-family: "Raleway", sans-serif;
 }
 
 body {
   width: 100%;
 }
 
-.darkMode {
-  background-color: black;
-  color: white;
+@font-face {
+  font-family: "Raleway";
+  src: url("fonts/AlmendraSC-Regular.ttf");
+  font-style: normal;
+  font-weight: 100;
 }
-
 .header {
   height: 4em;
   width: 100%;
