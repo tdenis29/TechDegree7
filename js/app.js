@@ -87,6 +87,9 @@ send.addEventListener('click', () => {
       }
     }
   });
+
+// FIX THIS
+
     /*execute a function presses a key on the keyboard:*/
     inp.addEventListener("keydown", function(e) {
       var x = document.getElementById(this.id + "autocomplete-list");
@@ -152,51 +155,48 @@ document.addEventListener("click", function (e) {
 const localStorage = window.localStorage;
 const save = document.getElementById("save");
 const cancel = document.getElementById("cancel");
-
-
 const timeZoneList = document.getElementById('timeZone');
-
-
+let checkbox1 = document.getElementById('emailToggle');
+let checkbox2 = document.getElementById('privateMode');
+let currentArea = document.getElementById('timeZone'); 
 // on save click get DOM elements then SET value of checkboxes and select menu.
 
 save.addEventListener('click', () => {
-  checkbox1 = document.getElementById('emailToggle').checked;
-  if(checkbox1 === true) {
+  if(checkbox1.checked) {
     localStorage.setItem('checkbox1', "true");
     console.log(checkbox1); 
+  } else {
+    localStorage.setItem('checkbox1', 'false')
   }
-  checkbox2 = document.getElementById('privateMode').checked;
-  if( checkbox2 == true) {
-    localStorage.setItem('checkbox2', true); 
+  
+  if( checkbox2.checked) {
+    localStorage.setItem('checkbox2', "true"); 
     console.log(checkbox2)
+  }  else {
+    localStorage.setItem('checkbox2', 'false')
   }
-let currentArea = document.getElementById('timeZone').value; 
-localStorage.setItem('localization', currentArea);
+localStorage.setItem('localization', currentArea.value);
 });
 
 function load() {
-  var checked = localStorage.getItem('checkbox1');
-  if (checked === "true") {
-      document.getElementById("checkbox1").setAttribute('checked','checked');
+  if (localStorage.getItem('checkbox1') === "true") {
+    checkbox1.checked = true;
   }
-  var checked2 = localStorage.getItem('checkbox2')
-  if (checked2 === "true") {
-    document.getElementById("checkbox2").setAttribute('checked', 'checked');
+  if (localStorage.getItem('checkbox2') === "true") {
+    checkbox2.checked = true;
   }
-  timeZoneList.value = localStorage.getItem('localization');
+  if ( localStorage.getItem('localization')) {
+    timeZoneList.value = localStorage.getItem('localization'); 
+  }
+ 
 }
+load();
 // clear settings on cancel click
 cancel.addEventListener('click', () => {
   localStorage.clear();
 })
 
-// onload get local storage values 
 
-  // var checked = JSON.parse(localStorage.getItem("checkbox1"));
-  //   document.getElementById("checkbox1").checked = checked;
-  //   var checked = JSON.parse(localStorage.getItem("checkbox2"));
-  //   document.getElementById("checkbox2").checked = checked;
-  //   timeZoneList.value = localStorage.getItem('localization');
 
 
 

@@ -81,23 +81,24 @@ input {
     justify-content: space-between;
     align-items: left;
     flex-direction: column; 
+    
 }
 .switch-light{
- margin: 0 auto;
- flex-direction: row;
-justify-content: space-between;
-align-items: left;;
+ display: flex;
  padding: 1em 1em 1em 0;
- width: 75%;
-strong {
-    display: inline-block;
-span {
-    display: block;
-    
-}}}
+ width: 100%;;
+}
+
+.toggle-buttons {
+    display: flex;
+}
+.span-container {
+    width: 20%;
+}
 .form-field {
     height: 2.75em;
     border-radius: .5em;
+    color: black;
 }
 .settings-button {
     width: 100%;
@@ -105,7 +106,6 @@ span {
     justify-content: space-between;
     text-align: center;
     padding: 1em 0 1em 0; 
-
 }
 .save-button-primary {
     width: 45%;

@@ -6,7 +6,6 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="description" content="Dasboard">
         <link rel="preconnect" href="https://fonts.gstatic.com">
-  
         <link rel="stylesheet" href="css/main.css">
         <link rel="stylesheet" href="css/toggle-switch.css">
     </head>
@@ -280,14 +279,14 @@
                             <div class="settings">
                                     <h3>Settings</h3>
                                     <div class="toggle-buttons">
-                                    <label class="toggle-switch-ios" >
+                                    <label class="switch-ios switch-light" >
                                         <input type="checkbox" id="emailToggle">
                                       
                                         <strong>
                                           Send Email Notifications
                                         </strong>
                                       
-                                        <span>
+                                        <span class="span-container">
                                           <span>Off</span>
                                           <span>On</span>
                                           <a></a>
@@ -295,12 +294,13 @@
                                       </label>
                                     </div>
                                      <div class="toggle-buttons">
-                                      <label class="switch-ios" >
+                                      <label class="switch-ios switch-light" >
                                         <input type="checkbox" class="switch-ios" id="privateMode">
                                       
                                         <strong>
                                           Set Profile To Public
                                         </strong>
+
                                       
                                         <span>
                                           <span>Off</span>
@@ -316,7 +316,7 @@
                                     <option>Mountain</option>
                                     <option>Central</option>
 
-                                    <!-- more options -->
+                                    
                                 </select>
                                  <div class="settings-button" >
                                     <button class="save-button-primary" id="save">Save</button>
@@ -332,7 +332,7 @@
         <script src="js/charts.js"></script>              
       <script src="js/app.js"></script>
       
-    </body onload=load()>
+    </body>
      
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
      <symbol> 
