@@ -80,7 +80,7 @@ send.addEventListener('click', () => {
         b.innerHTML += arr[i].substr(val.length);
         b.innerHTML += "<input type='hidden' value='" + arr[i] + "'>";
         b.addEventListener('click',function (e){
-          inp.value = this.getElementsByTagName("input")[1].value;
+          inp.value = this.getElementsByTagName("input")[0].value;
           closeAllLists();
         });
         a.appendChild(b);
@@ -88,25 +88,25 @@ send.addEventListener('click', () => {
     }
   });
 
-// FIX THIS
+
 
     /*execute a function presses a key on the keyboard:*/
     inp.addEventListener("keydown", function(e) {
       var x = document.getElementById(this.id + "autocomplete-list");
       if (x) x = x.getElementsByTagName("div");
-      if (e.keyCode == 40) {
+      if (e.key === "ArrowDown") {
         /*If the arrow DOWN key is pressed,
         increase the currentFocus variable:*/
         currentFocus++;
         /*and and make the current item more visible:*/
         addActive(x);
-      } else if (e.keyCode == 38) { //up
+      } else if (e.key === "ArrowUp") { //up
         /*If the arrow UP key is pressed,
         decrease the currentFocus variable:*/
         currentFocus--;
         /*and and make the current item more visible:*/
         addActive(x);
-      } else if (e.keyCode == 13) {
+      } else if (e.key === "Enter") {
         /*If the ENTER key is pressed, prevent the form from being submitted,*/
         e.preventDefault();
         if (currentFocus > -1) {
