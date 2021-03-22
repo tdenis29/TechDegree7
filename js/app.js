@@ -68,6 +68,7 @@ send.addEventListener('click', () => {
       return false;
     }
     currentFocus = -1;
+
     a = document.createElement("DIV");
     a.setAttribute("id", this.id + "autocomplete-list");
     a.setAttribute("class", "autocomplete-items");
@@ -147,17 +148,100 @@ document.addEventListener("click", function (e) {
 
 
 // Local Storage 
+
 const localStorage = window.localStorage;
+const save = document.getElementById("save");
+const cancel = document.getElementById("cancel");
 
 
 const timeZoneList = document.getElementById('timeZone');
 
-timeZoneList.addEventListener('change', (event) => {
-  let currentArea = event.target.value;
-  localStorage.setItem('localization', currentArea);
+
+// on save click get DOM elements then SET value of checkboxes and select menu.
+
+save.addEventListener('click', () => {
+  checkbox1 = document.getElementById('emailToggle').checked;
+  if(checkbox1 === true) {
+    localStorage.setItem('checkbox1', "true");
+    console.log(checkbox1); 
+  }
+  checkbox2 = document.getElementById('privateMode').checked;
+  if( checkbox2 == true) {
+    localStorage.setItem('checkbox2', true); 
+    console.log(checkbox2)
+  }
+let currentArea = document.getElementById('timeZone').value; 
+localStorage.setItem('localization', currentArea);
 });
 
-if ( localStorage.getItem('localization')) {
-  timeZoneList.value = localStorage.getItem('localization'); 
+function load() {
+  var checked = localStorage.getItem('checkbox1');
+  if (checked === "true") {
+      document.getElementById("checkbox1").setAttribute('checked','checked');
+  }
+  var checked2 = localStorage.getItem('checkbox2')
+  if (checked2 === "true") {
+    document.getElementById("checkbox2").setAttribute('checked', 'checked');
+  }
+  timeZoneList.value = localStorage.getItem('localization');
 }
+// clear settings on cancel click
+cancel.addEventListener('click', () => {
+  localStorage.clear();
+})
+
+// onload get local storage values 
+
+  // var checked = JSON.parse(localStorage.getItem("checkbox1"));
+  //   document.getElementById("checkbox1").checked = checked;
+  //   var checked = JSON.parse(localStorage.getItem("checkbox2"));
+  //   document.getElementById("checkbox2").checked = checked;
+  //   timeZoneList.value = localStorage.getItem('localization');
+
+
+
+
+
+
+
+
+// emailToggle.addEventListener('checked', () => {
+// getVal();
+// })
+
+// privateMode.addEventListener('checked', () => {
+//   getVal();
+// })
+
+// function getVal() {
+//     checkedOne = JSON.parse(localStorage.getItem(""));
+//     document.getElementById("emailToggle").checked = checkedOne;
+//     checkedTwo = JSON.parse(localStorage.getItem(""));
+//     document.getElementById("privateMode").checked = checkedTwo;
+// }
+
+// function save() {	
+//   if(checkedOne === 'checked'){
+//     localStorage.setItem("emailToggle", checkbox.checked);
+// }
+// if(privateMode === 'checked'){
+//     localStorage.setItem("privateMode", checkbox.checked);
+// }
+//     localStorage.setItem('localization', currentArea);     
+// }
+// function clearSave() {
+// localStorage.clear();
+// }
+
+// function loadSettings() {
+// if ( localStorage.getItem('localization')) {
+//   timeZoneList.value = localStorage.getItem('localization'); 
+// }
+// }
+// const timeZoneList = document.getElementById('timeZone');
+
+// timeZoneList.addEventListener('change', (event) => {
+//    currentArea = event.target.value;
+// });
+
 

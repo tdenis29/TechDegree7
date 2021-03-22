@@ -2,14 +2,14 @@
 .messenger-container {
     background: whitesmoke;
     padding: 1em;
-    margin: .5em;
+    border-top: solid 1px lightgray;
     align-items: left;
 
 textarea {
     display: block;
     margin-top: .5em;
     line-height: 2em;
-    border: solid 1px gray;
+    border-top: solid 1px lightgray;
     width: 100%;
     border-radius: 4px;
 }}
@@ -75,7 +75,8 @@ input {
 .settings {
     background: whitesmoke;
     padding: 1em;
-    margin: .5em;
+    border-top: solid 1px lightgray;
+    border-left : solid 2px lightgray;
     display: flex;
     justify-content: space-between;
     align-items: left;

@@ -9,7 +9,7 @@ h3 {
 .members-container{
     background: whitesmoke;
     padding: 1em;
-    margin: .5em;
+    border-top: solid 1px lightgray;  
     display: flex;
     justify-content: left;
     align-items: center; 
@@ -42,7 +42,8 @@ a {
 .activity-container{
     background: whitesmoke;
     padding: 1em;
-    margin: .5em;
+    border-top: solid 1px lightgray;
+    border-left: solid 2px lightgray;
     display: flex;
     align-items: center; 
 img {

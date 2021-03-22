@@ -22,63 +22,65 @@ grid-template-areas:
         width: 95vw;
         }
 // 768px
-    @media (min-width: 768px) {
-        .grid-container {
-        grid-template-columns: 55px 1fr;
-        grid-template-areas:
-        "header header"
-        "nav main"
-        "nav main";
-        }
-        }
-.main {
+    // Main Grid
+@media (min-width: 768px) {
+    .grid-container {
+    grid-template-columns: 55px 1fr;
+    grid-template-areas:
+    "header header"
+    "nav main"
+    "nav main";
+    }
+    }
+    .main {
     display: grid;
 }
-    @media (min-width: 768px) {
+// width of double
+@media (min-width: 768px) {
     .main {
     grid-template-columns: 50% ;
     }
     }
-    @media (min-width: 768px) {
-        .dashboard-header {
-            grid-column: 1 / span 2;
-        }
-        .alert {
-            grid-column: 1 / span 2;
-        }
-        .traffic, .social-container, .mobile-user, .daily {
+@media (min-width: 768px) {
+    .dashboard-header {
         grid-column: 1 / span 2;
-        }
-        .social-card {
-            width: 30%;
-        }
-       }
+    }
+    .alert {
+        grid-column: 1 / span 2;
+    }
+    .traffic, .social-container, .mobile-user, .daily {
+    grid-column: 1 / span 2;
+    }
+    .social-card {
+        width: 30%;
+    }
+    }
       
-       @media(min-width: 768px){
-        .traffic-nav-link {
-            padding: 0 .5em 0 .5em;
-           }
-       } 
-       @media (min-width: 768px) {
-        .members, .message {
-        grid-column: 1 / span 1;
-        }
-        }
-        @media (min-width: 768px) {
-             .activity, .settings {
-            grid-column: 2 / span 1;
-            }
-            }
-            @media (min-width: 768px) {
-                .widget-container-full {
-                width: 90vw;
-                }
-                .widget-container-half {
-          
-                width: 45vw;
-                }
-                }
-                  
+@media(min-width: 768px){
+    .traffic-nav-link {
+    padding: 0 .5em 0 .5em;
+    }
+    } 
+@media (min-width: 768px) {
+    .members, .message {
+    grid-column: 1 / span 1;
+    }
+    }
+@media (min-width: 768px) {
+        .activity, .settings {
+    grid-column: 2 / span 1;
+    }
+    }
+@media (min-width: 768px) {
+    .widget-container-full {
+    width: 90vw;
+    }
+    .widget-container-half {
+
+    width: 45vw;
+    }
+    }
+        
                  
                         
 
