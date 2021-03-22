@@ -631,8 +631,12 @@ header h1 {
   margin-bottom: 1rem;
   padding: 0.5rem;
   background-color: #3f398d;
-  color: lightgrey;
   fill: lightgrey;
+  opacity: 0.8;
+}
+
+a:focus {
+  opacity: 1;
 }
 
 .bordered {
