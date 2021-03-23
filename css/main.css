@@ -804,6 +804,7 @@ header h1 {
   border-left: solid 2px lightgray;
   display: flex;
   align-items: center;
+  position: relative;
 }
 .recent-activity .activity-container img {
   border-radius: 50%;
@@ -815,6 +816,14 @@ header h1 {
   display: flex;
   flex-direction: column;
   justify-self: center;
+}
+
+.arrow {
+  position: absolute;
+  right: 1em;
+  top: 1.2em;
+  color: lightgrey;
+  font-size: 1.7em;
 }
 
 .activity-text p:nth-child(2) {

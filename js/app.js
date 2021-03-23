@@ -203,43 +203,5 @@ cancel.addEventListener('click', () => {
 
 
 
-// emailToggle.addEventListener('checked', () => {
-// getVal();
-// })
-
-// privateMode.addEventListener('checked', () => {
-//   getVal();
-// })
-
-// function getVal() {
-//     checkedOne = JSON.parse(localStorage.getItem(""));
-//     document.getElementById("emailToggle").checked = checkedOne;
-//     checkedTwo = JSON.parse(localStorage.getItem(""));
-//     document.getElementById("privateMode").checked = checkedTwo;
-// }
-
-// function save() {	
-//   if(checkedOne === 'checked'){
-//     localStorage.setItem("emailToggle", checkbox.checked);
-// }
-// if(privateMode === 'checked'){
-//     localStorage.setItem("privateMode", checkbox.checked);
-// }
-//     localStorage.setItem('localization', currentArea);     
-// }
-// function clearSave() {
-// localStorage.clear();
-// }
-
-// function loadSettings() {
-// if ( localStorage.getItem('localization')) {
-//   timeZoneList.value = localStorage.getItem('localization'); 
-// }
-// }
-// const timeZoneList = document.getElementById('timeZone');
-
-// timeZoneList.addEventListener('change', (event) => {
-//    currentArea = event.target.value;
-// });
 
 
