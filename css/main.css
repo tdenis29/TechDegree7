@@ -480,7 +480,7 @@ body {
 
 @font-face {
   font-family: "Raleway";
-  src: url("fonts/AlmendraSC-Regular.ttf");
+  src: url("fonts/Raleway-Regular.ttf");
   font-style: normal;
   font-weight: 100;
 }
@@ -915,6 +915,8 @@ input {
 
 .toggle-buttons {
   display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .span-container {

@@ -91,6 +91,8 @@ input {
 
 .toggle-buttons {
     display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 .span-container {
     width: 20%;
