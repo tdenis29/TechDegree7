@@ -95,24 +95,24 @@ send.addEventListener('click', () => {
       var x = document.getElementById(this.id + "autocomplete-list");
       if (x) x = x.getElementsByTagName("div");
       if (e.key === "ArrowDown") {
-        /*If the arrow DOWN key is pressed,
-        increase the currentFocus variable:*/
+     
         currentFocus++;
-        /*and and make the current item more visible:*/
+       
         addActive(x);
       } else if (e.key === "ArrowUp") { //up
-        /*If the arrow UP key is pressed,
-        decrease the currentFocus variable:*/
+      
         currentFocus--;
-        /*and and make the current item more visible:*/
+      
         addActive(x);
       } else if (e.key === "Enter") {
-        /*If the ENTER key is pressed, prevent the form from being submitted,*/
+       
         e.preventDefault();
         if (currentFocus > -1) {
-          /*and simulate a click on the "active" item:*/
+          
           if (x) x[currentFocus].click();
         }
+      } if (currentFocus < 0 && e.key === "BackSpace") {
+          currentFocus--
       }
   });
 
@@ -164,16 +164,16 @@ let currentArea = document.getElementById('timeZone');
 save.addEventListener('click', () => {
   if(checkbox1.checked) {
     localStorage.setItem('checkbox1', "true");
-    console.log(checkbox1); 
+  
   } else {
-    localStorage.setItem('checkbox1', 'false')
+    localStorage.setItem('checkbox1', 'false');
   }
   
   if( checkbox2.checked) {
     localStorage.setItem('checkbox2', "true"); 
-    console.log(checkbox2)
+
   }  else {
-    localStorage.setItem('checkbox2', 'false')
+    localStorage.setItem('checkbox2', 'false');
   }
 localStorage.setItem('localization', currentArea.value);
 });
@@ -181,15 +181,15 @@ localStorage.setItem('localization', currentArea.value);
 function load() {
   if (localStorage.getItem('checkbox1') === "true") {
     checkbox1.checked = true;
-  }
+  };
   if (localStorage.getItem('checkbox2') === "true") {
     checkbox2.checked = true;
-  }
+  };
   if ( localStorage.getItem('localization')) {
     timeZoneList.value = localStorage.getItem('localization'); 
-  }
+  };
  
-}
+};
 load();
 // clear settings on cancel click
 cancel.addEventListener('click', () => {

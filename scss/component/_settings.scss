@@ -78,24 +78,31 @@ input {
     border-top: solid 1px lightgray;
     border-left : solid 2px lightgray;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     align-items: left;
     flex-direction: column; 
+    position: relative;
     
 }
 .switch-light{
  display: flex;
  padding: 1em 1em 1em 0;
- width: 100%;;
+ width: 100%;
+ 
 }
 
-.toggle-buttons {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-.span-container {
+.center-this {
     width: 20%;
+   margin: 0 auto;
+   text-align: center;
+}
+.center-this2 {
+    width: 20%;
+   margin: 0 auto;
+   text-align: center;
+}
+.center-me-too{
+    margin-right: 2em;
 }
 .form-field {
     height: 2.75em;

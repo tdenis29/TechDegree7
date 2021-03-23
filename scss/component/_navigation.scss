@@ -15,11 +15,8 @@ margin-bottom: 1rem;
 padding: .5rem;
 background-color: $primary-dark;
 fill: lightgrey;
-opacity: .8;
-}
-a:focus{
-    opacity: 1;
 }
 .bordered{
     border-left: solid 4px lime;
+    fill: white;
 }

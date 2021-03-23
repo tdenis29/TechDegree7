@@ -13,7 +13,6 @@ h3 {
     display: flex;
     justify-content: left;
     align-items: center; 
-   
     
 img {
     border-radius: 50%;
@@ -33,6 +32,10 @@ a {
     min-width: 0;
 }}
 
+
+.date {
+    margin-bottom: .2em;
+}
 // Activity
 .recent-activity{
     display: block;
@@ -59,7 +62,7 @@ img {
 
 .activity-text p:nth-child(2){
     font-size: .8em;
-    font-style: italic;
+   
 }
 .recent-activity h3 {
     padding: 1em;

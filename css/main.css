@@ -632,15 +632,11 @@ header h1 {
   padding: 0.5rem;
   background-color: #3f398d;
   fill: lightgrey;
-  opacity: 0.8;
-}
-
-a:focus {
-  opacity: 1;
 }
 
 .bordered {
   border-left: solid 4px lime;
+  fill: white;
 }
 
 .dashboard-header {
@@ -790,6 +786,10 @@ a:focus {
   min-width: 0;
 }
 
+.date {
+  margin-bottom: 0.2em;
+}
+
 .recent-activity {
   display: block;
   width: 100%;
@@ -816,7 +816,6 @@ a:focus {
 
 .activity-text p:nth-child(2) {
   font-size: 0.8em;
-  font-style: italic;
 }
 
 .recent-activity h3 {
@@ -902,9 +901,10 @@ input {
   border-top: solid 1px lightgray;
   border-left: solid 2px lightgray;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
   align-items: left;
   flex-direction: column;
+  position: relative;
 }
 
 .switch-light {
@@ -913,14 +913,20 @@ input {
   width: 100%;
 }
 
-.toggle-buttons {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+.center-this {
+  width: 20%;
+  margin: 0 auto;
+  text-align: center;
 }
 
-.span-container {
+.center-this2 {
   width: 20%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.center-me-too {
+  margin-right: 2em;
 }
 
 .form-field {
