@@ -111,7 +111,7 @@ send.addEventListener('click', () => {
           
           if (x) x[currentFocus].click();
         }
-      } if (currentFocus < 0 && e.key === "BackSpace") {
+      } if (currentFocus > 0 && e.key === "BackSpace") {
           currentFocus--
       }
   });
