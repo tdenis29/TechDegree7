@@ -134,8 +134,6 @@ send.addEventListener('click', () => {
     }
   }
   function closeAllLists(elmnt) {
-    /*close all autocomplete lists in the document,
-    except the one passed as an argument:*/
     var x = document.getElementsByClassName("autocomplete-items");
     for (var i = 0; i < x.length; i++) {
       if (elmnt != x[i] && elmnt != inp) {
@@ -143,7 +141,7 @@ send.addEventListener('click', () => {
     }
   }
 }
-/*execute a function when someone clicks in the document:*/
+
 document.addEventListener("click", function (e) {
     closeAllLists(e.target);
 });

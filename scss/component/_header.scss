@@ -24,7 +24,7 @@ h1 {
 
 .bell-wrap {
     align-items: center;
-    margin-right: 1rem;
+    margin-right: 1.5rem;
     fill: white;
     position: absolute;
     right: 8rem;
@@ -61,7 +61,7 @@ h1 {
 
 .notify {
     position: absolute;
-    right: 5px;
+    right: .3rem;
     top: 0;
     height: .5em;
     width: .5em;
@@ -71,8 +71,8 @@ h1 {
 
 .profile-pic img {
     display: inline-block;
-    height: 2rem;
-    width: 2rem;
+    height: 3rem;
+    width: 3rem;
     border-radius: 50%;
     align-self: center;
     padding-left: .5rem;

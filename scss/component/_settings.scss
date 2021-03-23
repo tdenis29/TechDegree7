@@ -3,7 +3,7 @@
     background: whitesmoke;
     padding: 1em;
     border-top: solid 1px lightgray;
-    align-items: left;
+
 
 textarea {
     display: block;
@@ -66,7 +66,7 @@ input {
     width: 50%;
     margin: 1rem auto;
     border-radius: .5em;
-    box-shadow: inset;
+ 
     color: white;
 }
 
@@ -79,7 +79,7 @@ input {
     border-left : solid 2px lightgray;
     display: flex;
     justify-content: space-evenly;
-    align-items: left;
+  
     flex-direction: column; 
     position: relative;
     
@@ -96,11 +96,7 @@ input {
    margin: 0 auto;
    text-align: center;
 }
-.center-this2 {
-    width: 20%;
-   margin: 0 auto;
-   text-align: center;
-}
+
 .center-me-too{
     margin-right: 2em;
 }
