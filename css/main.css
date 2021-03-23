@@ -586,10 +586,13 @@ header h1 {
   color: white;
   width: 70%;
   margin: 2em auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .modal-content {
-  background-color: #7039d6;
+  background-color: whitesmoke;
   margin: 2em auto;
   padding: 1.125em;
   border: 1px solid #888;
@@ -597,14 +600,14 @@ header h1 {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  color: lightgray;
+  color: black;
 }
 .modal-content p {
   padding: 0.5em;
 }
 
 .close {
-  color: white;
+  color: red;
   font-size: 3.8em;
   font-weight: bold;
 }

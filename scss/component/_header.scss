@@ -95,14 +95,18 @@ h1 {
         width: 100%;
         height: 100%; 
         background-color: $primarycolor;
+      
     }
     .modal-header {
         color: white;
         width: 70%;
         margin: 2em auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
       }
     .modal-content {
-        background-color: $secondarycolor;
+        background-color: whitesmoke;
         margin: 2em auto; 
         padding: 1.125em;
         border: 1px solid #888;
@@ -110,15 +114,16 @@ h1 {
         display: flex;
         justify-content: space-between;
         align-items: center;
-        color: lightgray;
+        color: black;
       p {
         padding: .5em;
       }}
 
       .close {
-        color: white;
+        color:red;
         font-size: 3.8em;
         font-weight: bold;
+        
       }
       .close:hover,
       .close:focus {
