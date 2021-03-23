@@ -21,7 +21,7 @@ let modal = document.getElementById("myModal");
 
 let bell = document.getElementById("bell-icon");
 
-var span = document.getElementsByClassName("close")[0];
+let span = document.getElementsByClassName("close")[0];
 
 bell.onclick = function() {
   modal.style.display = "block";
