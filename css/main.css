@@ -820,7 +820,7 @@ header h1 {
 
 .arrow {
   position: absolute;
-  right: 1em;
+  right: 0.5em;
   top: 1.2em;
   color: lightgrey;
   font-size: 1.7em;
